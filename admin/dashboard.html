@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tổng quan - Nha Khoa Smile</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+<body data-layout="app" data-active="dashboard">
+  <main id="content">
+    <h1>Xin chào, <span data-user-name></span></h1>
+    <p class="muted">Chọn một chức năng để bắt đầu.</p>
+    <div class="quick">
+      <a class="card" href="patients.html"><h3>Bệnh nhân</h3><p>Xem, khóa/mở khóa, xóa tài khoản.</p></a>
+      <a class="card" href="dentists.html"><h3>Nha sĩ</h3><p>Thêm, sửa, khóa/mở khóa tài khoản nha sĩ.</p></a>
+      <a class="card" href="services.html"><h3>Dịch vụ khám</h3><p>Thêm, sửa, xóa dịch vụ.</p></a>
+      <a class="card" href="admins.html"><h3>Quản trị viên</h3><p>Tạo tài khoản quản trị viên khác.</p></a>
+      <a class="card" href="profile.html"><h3>Thông tin cá nhân</h3><p>Cập nhật hồ sơ, đổi mật khẩu.</p></a>
+    </div>
+  </main>
+  <script src="../assets/js/api.js"></script>
+  <script src="../assets/js/guard.js" data-role="admin"></script>
+  <script src="../assets/js/layout.js"></script>
+</body>
+</html>
