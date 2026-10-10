@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ - Nha Khoa Smile</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-layout="public" data-active="home">
+  <header id="site-header"></header>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <h1>Đặt lịch khám nha khoa, không cần gọi điện</h1>
+        <p class="lead">Chọn dịch vụ, nha sĩ và khung giờ còn trống. Nha sĩ xác nhận, bạn nhận kết quả ngay trên hệ thống.</p>
+        <div class="cta">
+          <a class="btn" href="register.html" id="cta-main">Đăng ký để đặt lịch</a>
+          <a class="btn btn-ghost" href="services.html">Xem dịch vụ</a>
+        </div>
+      </div>
+      <aside class="hero-panel">
+        <h3>Đặt lịch trong 3 bước</h3>
+        <ol>
+          <li><strong>Chọn dịch vụ</strong> và nha sĩ phụ trách.</li>
+          <li><strong>Chọn ngày và khung giờ</strong> còn trống trên lịch.</li>
+          <li><strong>Chờ xác nhận</strong> từ nha sĩ, theo dõi trong "Lịch khám của tôi".</li>
+        </ol>
+      </aside>
+    </section>
+    <section class="cards">
+      <div class="card"><h3>Không trùng lịch</h3><p>Khung giờ đã có người đặt sẽ không hiển thị nữa.</p></div>
+      <div class="card"><h3>Theo dõi và hủy lịch</h3><p>Xem trạng thái lịch khám và hủy khi chưa đến giờ.</p></div>
+      <div class="card"><h3>Lưu lịch sử khám</h3><p>Xem lại các lần khám và ghi chú kết quả của nha sĩ.</p></div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script>DCAS.getMe().then(function (me) { if (me.logged_in) { var a = document.getElementById('cta-main'); a.textContent = 'Vào hệ thống'; a.href = DCAS.ROOT + me.home; } });</script>
+</body>
+</html>
