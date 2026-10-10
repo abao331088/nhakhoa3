@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thông tin cá nhân - Nha Khoa Smile</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+<body data-layout="app" data-active="profile">
+  <main id="content">
+    <h1>Thông tin cá nhân</h1>
+    <div id="force-msg" class="alert alert-info" role="alert" hidden></div>
+    <section class="panel">
+      <h2>Hồ sơ</h2>
+      <div id="info-msg" role="alert" hidden></div>
+      <form id="info-form" novalidate>
+        <div class="avatar-row"><div id="avatar-preview"></div>
+          <div class="field" style="margin:0;flex:1"><input id="avatar" name="avatar" type="file" accept="image/png,image/jpeg" style="padding:.6rem"><label for="avatar" style="top:0;font-size:.78rem">Ảnh đại diện (png, jpg, tối đa 2MB)</label><small class="err"></small></div></div>
+        <div class="profile-grid">
+          <div class="field"><input id="full_name" name="full_name" type="text" placeholder=" " maxlength="255" required><label for="full_name">Họ và tên</label><small class="err"></small></div>
+          <div class="field always"><input id="email" name="email" type="email" placeholder=" " readonly><label for="email">Email (không đổi được)</label><small class="err"></small></div>
+          <div class="field"><input id="phone" name="phone" type="tel" inputmode="numeric" placeholder=" " maxlength="10"><label for="phone">Số điện thoại</label><small class="err"></small></div>
+          <div class="field always"><input id="birthday" name="birthday" type="date"><label for="birthday">Ngày sinh</label><small class="err"></small></div>
+        </div>
+        <div class="field always" style="max-width:260px"><select id="gender" name="gender"><option value="">Chưa chọn</option><option value="male">Nam</option><option value="female">Nữ</option><option value="other">Khác</option></select><label for="gender">Giới tính</label><small class="err"></small></div>
+        <button class="btn" type="submit">Lưu thay đổi</button>
+      </form>
+    </section>
+    <section class="panel" id="password">
+      <h2>Đổi mật khẩu</h2>
+      <div id="pw-msg" role="alert" hidden></div>
+      <form id="pw-form" novalidate style="max-width:420px">
+        <div class="field" data-pw><input id="old_password" name="old_password" type="password" placeholder=" " autocomplete="current-password"><label for="old_password">Mật khẩu cũ</label><small class="err"></small></div>
+        <div class="field" data-pw><input id="new_password" name="new_password" type="password" placeholder=" " autocomplete="new-password"><label for="new_password">Mật khẩu mới (ít nhất 6 ký tự)</label><small class="err"></small></div>
+        <div class="field" data-pw><input id="confirm_password" name="confirm_password" type="password" placeholder=" " autocomplete="new-password"><label for="confirm_password">Xác nhận mật khẩu mới</label><small class="err"></small></div>
+        <button class="btn" type="submit">Đổi mật khẩu</button>
+      </form>
+    </section>
+  </main>
+  <script src="../assets/js/api.js"></script>
+  <script src="../assets/js/guard.js" data-role="dentist"></script>
+  <script src="../assets/js/layout.js"></script>
+  <script src="../assets/js/profile.js"></script>
+</body>
+</html>
