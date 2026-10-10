@@ -1,0 +1,10 @@
+/* Khung đăng nhập / đăng ký / quên mật khẩu - bám theo ảnh mẫu: thẻ tối ở giữa, tiêu đề căn giữa, nút navy full-width */
+.auth-wrap { flex: 1; display: grid; place-items: center; padding: 2rem 1rem; }
+.auth-card { width: 100%; max-width: 420px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 2rem 1.75rem 1.75rem; box-shadow: 0 20px 60px rgba(0,0,0,.45); }
+.auth-card.wide { max-width: 480px; }
+.auth-card .brand { justify-content: center; width: 100%; margin-bottom: 1.25rem; }
+.auth-card h1 { font-size: 1.35rem; text-align: center; margin-bottom: .35rem; }
+.auth-card .sub { text-align: center; color: var(--muted); font-size: .93rem; margin-bottom: 1.5rem; }
+.auth-links { display: flex; justify-content: space-between; gap: 1rem; margin: -.4rem 0 1.25rem; font-size: .9rem; }
+.auth-foot { text-align: center; margin: 1.25rem 0 0; color: var(--muted); font-size: .92rem; }
+.linkbox { display: block; margin-top: .5rem; padding: .6rem .75rem; background: rgba(0,0,0,.3); border-radius: 6px; }
